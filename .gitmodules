@@ -1,0 +1,6 @@
+[submodule "galleria"]
+	path = galleria
+	url = git@github.com:guilhermevs/galleria.git
+[submodule "jQuery-File-Upload"]
+	path = jQuery-File-Upload
+	url = git@github.com:guilhermevs/jQuery-File-Upload.git

@@ -1,4 +1,4 @@
-# jQuery File Upload Plugin
+# jQuery File Upload Plugin2
 
 ## Demo
 [Demo File Upload](http://aquantum-demo.appspot.com/file-upload)

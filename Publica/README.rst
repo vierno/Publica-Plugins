@@ -1,8 +1,8 @@
 publica.js
 ==========
-Conjunto de 
+Conjunto de plugins para utilizar em portais com o publica.
 
-Requirimentos
+Requerimentos
 -------------
 - jQuery 1.7+
 - mustache.js

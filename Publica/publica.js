@@ -6,14 +6,7 @@ $(function() {
     $.Publica = {
 
         /*
-        
-        */
-        getData : function(options) {
-        },
-
-        /*
         getJSON para domínio crusado.
-
         Utiliza JSONP para IE versão < 8.
         */
         XDomainJSON : function(url, dados, success) {
@@ -21,7 +14,7 @@ $(function() {
                 // Use Microsoft XDR for IE8+
                 var xdr = new XDomainRequest();
                 var query_string = ""
-                $.each(data, function(k, v) {
+                $.each(dados, function(k, v) {
                        query_string += k + "=" + escape(v) + "&"
                 });
                 var separator = url.search("[?]") > -1 ? "&" : "?"
@@ -52,12 +45,16 @@ $(function() {
             }
         },
 
-        
-
-        
-
+        /*
+        Conserta um link removendo o id do site, para ser usado com o
+        mustache.js
+        */
+        correctLink: function(link) {
+            return function(text, render){
+                return render(text).split("/").slice(1).join("/")
+            }
+        }
     };
-
 });
 
 

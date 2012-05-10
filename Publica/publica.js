@@ -21,7 +21,7 @@ $(function() {
                 } else if ($this.attr("id") == "recaptcha_response_field") {
                     dados.response = $this.val();
                 } else {
-                    if (($this.val() == "" || $this.val() == "- selecione -") && $this.data("req") == 1) {
+                    if (($this.val() == "" || $this.val() == "- selecione -" || $this.val() == "DDD") && $this.data("req") == 1) {
                         erros.push($this.data("verbose"));
                     }
                     dados[$this.data("verbose")] = $this.val();
@@ -35,7 +35,7 @@ $(function() {
         }, 
 
         /*
-        getJSON para domínio crusado.
+        getJSON para domínio cruzado.
 
         Utiliza JSONP para IE versão < 8.
         */
